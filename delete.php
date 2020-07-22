@@ -1,4 +1,5 @@
-<?php ob_start();
+<?php 
+ob_start();
 
 try {
     // grab the user id 

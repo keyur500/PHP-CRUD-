@@ -11,23 +11,31 @@
   <body>
     <div class="container">
     <header>
-      <h1> COMP1006 - Lab Five</h1>
+      <?php include_once('nav.php'); ?>
+      <h1> COMP1006 - Lab Nine</h1>
     </header>
     <main>
       <form action="process.php" method="post">
+        <h1>User Registration</h1>
         <label for="fname"> Your First Name  </label>
         <input type="text" name="fname" class="form-control" id="fname">
         <label for="lname"> Your Last Name  </label>
         <input type="text" name="lname" class="form-control" id="lname">
         <label for="email"> Your Email </label>
         <input type="email" name="email" class="form-control" id="email">
+        <label for="uname"> Your UserName </label>
+        <input type="text" name="uname" class="form-control" id="uname">
+        <label for="passwd"> Your Password </label>
+        <input type="password" name="passwd" class="form-control" id="passwd">
+        <label for="confirm_passwd"> Confirm Password </label>
+        <input type="password" name="confirm_passwd" class="form-control" id="confirm_passwd">
         <br>
         <input type="submit" name="submit" value="Send & Share" class="btn btn-primary">
       </form>
     </main>
-    <footer>
-      <p> &copy; 2020 COMP1006 - Lab Five </p>
-    </footer>
+    <?php
+      include_once('footer.php');
+    ?>
    </div><!--end container-->
   </body>
 </html>
